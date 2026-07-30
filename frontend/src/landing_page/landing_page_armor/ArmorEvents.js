@@ -28,23 +28,12 @@ import {
   anoteMindstoneJuneNYCPath,
   bttFallPath,
   paleBlueDotPath,
-  databricksPath,
   aiDayFall2025Path,
   aiAcademySpring2026Path,
   holidayPartyPath,
-  jan2026Path,
-  feb2026Path,
   worldCupPartyPath,
   summerPartyPath,
 } from "../../constants/RouteConstants";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useLocation,
-  BrowserRouter,
-} from "react-router-dom";
 
 // ─── Google Calendar live feed ───────────────────────────────────────────────
 // 1. Create a Google Calendar for Anote events and make it public:
@@ -417,9 +406,6 @@ const ArmorEvents = () => {
   const sortedEvents = mergedEvents
   .map(event => ({ ...event, dateObject: parseDate(event.date) }))
   .sort((a, b) => b.dateObject - a.dateObject);
-
-  // const today = new Date();
-  const nextEventIndex = sortedEvents.findIndex(event => event.dateObject >= today);
 
   const [query, setQuery] = useState("");
   const [filterType, setFilterType] = useState("all");

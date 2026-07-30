@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-    BrowserRouter as Router,
     Routes,
     Route,
     Link,
     useLocation,
-    BrowserRouter,
 } from "react-router-dom";
 import {
     FaHome,
@@ -14,29 +12,23 @@ import {
     FaNewspaper,
     FaGlobe,
     FaRobot,
-    FaBriefcase,
     FaBook,
     FaUserCircle,
     FaHandshake,
     FaCoffee,
-    FaLanguage,
 } from "react-icons/fa";
 import {
     communityHomePath,
     communityEventsPath,
     communityMembersPath,
     communityNewsPath,
-    communityJobsPath,
     communityResourcesPath,
     communityContentPath,
-    communityPartnershipsPath,
     uploadPath,
     communityCoffeeChatsPath,
     communityReferralsPath,
-    communityRegionalHubsPath,
     communityAgentRegistryPath,
     communityAcademyPath,
-    communityAcademyOverviewPath
 } from "../../constants/RouteConstants"; // ← adjust import path
 import ArmorEvents from "./ArmorEvents";
 import ArmorMain from "./ArmorMain";
