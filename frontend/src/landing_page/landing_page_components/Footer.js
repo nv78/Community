@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,7 +7,7 @@ function Footer() {
         <div className="md:w-1/12 lg:w-1/6 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <nav className="list-none mb-10">
             <li className="mb-3">
-              <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <span className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                 <img
                   src="/logo.png"
                   alt="logo"
@@ -18,14 +17,14 @@ function Footer() {
                 <span className=" text-2xl text-white font-semibold font-['Arial']">
                   Anote
                 </span>
-              </a>
+              </span>
             </li>
             <li className="mb-3">
               {" "}
               <a
                 className="mt-2 text-sm text-anoteblack-100 hover:text-turquoise-300 hover:cursor-pointer"
                 href="https://docs.anote.ai/anew/anotecentricai.html"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 Human Centered AI
               </a>
@@ -34,7 +33,7 @@ function Footer() {
               <a
                 className="mt-2 text-sm text-anoteblack-100 hover:text-turquoise-300 hover:cursor-pointer"
                 href={"mailto:nvidra@anote.ai"}
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 nvidra@anote.ai
               </a>
@@ -50,12 +49,8 @@ function Footer() {
               <li className="mb-3">
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" +
-                        "/labels"
-                    )
-                  }
+                  href="https://anote.ai/labels"
+                  target="_blank" rel="noreferrer"
                 >
                   Data Labeler
                 </a>
@@ -64,7 +59,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://anote.ai/downloadprivategpt"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Private Chatbot
                 </a>
@@ -72,15 +67,9 @@ function Footer() {
               <li className="mb-3">
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  // href="https://docs.anote.ai/api/anoteapi.html"
-                  // target="_blank"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/predict#Hallucinate"
-                    )
-                  }
+                  href="https://anote.ai/predict#Hallucinate"
+                  target="_blank" rel="noreferrer"
                 >
-                  {/* APIs */}
                   Model Inference
                 </a>
               </li>
@@ -88,7 +77,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://upreach.ai"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Upreach
                 </a>
@@ -97,7 +86,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://nwsltr.ai"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   AI Newsletter
                 </a>
@@ -113,64 +102,19 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://community.anote.ai/community/events"
-                    )
-                  }
-                >
-                  Events
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://community.anote.ai/community/events" target="_blank" rel="noreferrer">Events</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://community.anote.ai/community/members"
-                    )
-                  }
-                >
-                  Members
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://community.anote.ai/community/members" target="_blank" rel="noreferrer">Members</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://community.anote.ai/community/content"
-                    )
-                  }
-                >
-                  Content
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://community.anote.ai/community/content" target="_blank" rel="noreferrer">Content</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://community.anote.ai/community/agents"
-                    )
-                  }
-                >
-                  Agents
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://community.anote.ai/community/agents" target="_blank" rel="noreferrer">Agents</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://community.anote.ai/community/news"
-                    )
-                  }
-                >
-                  News
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://community.anote.ai/community/news" target="_blank" rel="noreferrer">News</a>
               </li>
             </nav>
           </div>
@@ -186,7 +130,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://docs.anote.ai/active/classification.html"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Text Classification
                 </a>
@@ -195,7 +139,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://docs.anote.ai/ner/namedentityrecognition.html"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Named Entity Recognition
                 </a>
@@ -204,7 +148,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://docs.anote.ai/prompting/questionanswering.html"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Question and Answering
                 </a>
@@ -213,7 +157,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://docs.anote.ai/structured/identifying.html"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Data Validation
                 </a>
@@ -222,7 +166,7 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://docs.anote.ai/fewshot/fewshotlearning.html"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Few Shot Learning
                 </a>
@@ -238,64 +182,19 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/customers/openads"
-                    )
-                  }
-                >
-                  OpenAds
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/customers/openads" target="_blank" rel="noreferrer">OpenAds</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/customers/harvard-medical-school"
-                    )
-                  }
-                >
-                  Harvard Medical
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/customers/harvard-medical-school" target="_blank" rel="noreferrer">Harvard Medical</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/customers/weillcornell"
-                    )
-                  }
-                >
-                  Weill Cornell
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/customers/weillcornell" target="_blank" rel="noreferrer">Weill Cornell</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/customers/nist"
-                    )
-                  }
-                >
-                  NIST
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/customers/nist" target="_blank" rel="noreferrer">NIST</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/customers/rutgers"
-                    )
-                  }
-                >
-                  Rutgers
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/customers/rutgers" target="_blank" rel="noreferrer">Rutgers</a>
               </li>
             </nav>
           </div>
@@ -311,55 +210,28 @@ function Footer() {
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://anote-ai.medium.com/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Blog
                 </a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/faqs#FAQs"
-                    )
-                  }
-                >
-                  Labeling FAQs
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/faqs#FAQs" target="_blank" rel="noreferrer">Labeling FAQs</a>
               </li>
               <li className="mb-3">
                 <a
                   className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
                   href="https://www.youtube.com/watch?v=7I_pBLjMNzs"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Press
                 </a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/contact#Contact"
-                    )
-                  }
-                >
-                  Contact
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/contact#Contact" target="_blank" rel="noreferrer">Contact</a>
               </li>
               <li className="mb-3">
-                <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/careers#Careers"
-                    )
-                  }
-                >
-                  Careers
-                </a>
+                <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/careers#Careers" target="_blank" rel="noreferrer">Careers</a>
               </li>
             </nav>
           </div>
@@ -373,39 +245,31 @@ function Footer() {
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
               className="text-anoteblack-100 ml-1"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               All rights reserved -
             </a> */}
           <span className="px-400 pl-1">
-          <a
-                  className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer"
-                  onClick={() =>
-                    window.location.assign(
-                      "https://anote.ai/" + "/privacypolicy#Privacy Policy"
-                    )
-                  }
-                >
-                     - Privacy Policy
-                </a>
-                </span>
+            <a className="text-gray-300 hover:text-turquoise-300 hover:cursor-pointer" href="https://anote.ai/privacypolicy" target="_blank" rel="noreferrer"> - Privacy Policy</a>
+          </span>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a
               className="text-anoteblack-100 cursor-pointer"
               href="https://anote-ai.medium.com/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img
                 className="w-5 h-5"
                 src="/landing_page_assets/social/medium.svg"
+                alt="Medium"
                 loading="lazy"
               />
             </a>
             <a
               className="ml-3 text-anoteblack-100 cursor-pointer"
               href="https://www.linkedin.com/company/anote-ai"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <svg
                 fill="currentColor"
