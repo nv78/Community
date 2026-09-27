@@ -125,7 +125,7 @@ const ArmorHubs = () => {
 
   // Google Sheets API Configuration
   const SHEET_ID = "1Io-rzcwhTP9YJ4I_5964XVptrvPqtvadFlgqpvkZ6WI"; // Your Google Sheet ID
-  const API_KEY = "AIzaSyCjxXVDGAolugKgrTXpJ0HmAjL0lLxLN1E"; // Your Google API Key
+  const API_KEY = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY; // Your Google API Key
 
   // Function to construct sheet URLs based on city and data type
   const constructSheetURL = (citySheetName, dataType) => {

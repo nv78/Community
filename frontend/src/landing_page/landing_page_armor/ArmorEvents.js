@@ -42,7 +42,7 @@ import {
 //    Settings → Integrate calendar → Calendar ID
 // 3. Ensure the Google Calendar API is enabled for this project's API key in Google Cloud Console.
 const GCAL_ID = "e88890e803003d95935e56c48dc68aedfd5311e3204360f781830c06287f4f24@group.calendar.google.com";
-const GCAL_API_KEY = "AIzaSyCjxXVDGAolugKgrTXpJ0HmAjL0lLxLN1E";
+const GCAL_API_KEY = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY;
 
 // For calendar events that also have a dedicated community page, map event title
 // → internal route + image. Events not listed here link to the Google Calendar page.

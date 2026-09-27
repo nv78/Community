@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 const ACCENT_YELLOW = "#defe47";
 const ACCENT_BLUE = "#28b2fb";
 
-const API_KEY = "AIzaSyCjxXVDGAolugKgrTXpJ0HmAjL0lLxLN1E";
+const API_KEY = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY;
 const MEMBERS_SHEET_ID = "1IREd2vCxo7rDGOoDUYtzoywVGLqqUFCsu3qGsA0HsMc";
 const MEMBERS_SHEET_NAME = "Sheet-1";
 const CALENDAR_ID = "e88890e803003d95935e56c48dc68aedfd5311e3204360f781830c06287f4f24@group.calendar.google.com";

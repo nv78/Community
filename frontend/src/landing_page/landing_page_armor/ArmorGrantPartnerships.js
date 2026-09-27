@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 
 const SHEET_ID = "1Yb3zE-xvDUHsfiRaR75ggmMmOmkkgiDhgJ3WaVtRp10";
-const API_KEY = "AIzaSyCjxXVDGAolugKgrTXpJ0HmAjL0lLxLN1E";
+const API_KEY = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY;
 const SHEET_NAME = "active"; // your sheet tab name
 
 function ArmorGrantsPartnerships() {
